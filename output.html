@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3f5f45f458d22b39d24149ce0a83c7a8 {
+                    position: relative;
+                    width: 800.0px;
+                    height: 400.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+    <div>
+    <h5>Interactive Map</h5><br/>
+    </div>
+    
+    
+            <div class="folium-map" id="map_3f5f45f458d22b39d24149ce0a83c7a8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3f5f45f458d22b39d24149ce0a83c7a8 = L.map(
+                "map_3f5f45f458d22b39d24149ce0a83c7a8",
+                {
+                    center: [45.236261720838016, -78.47394518380646],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4.8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7158175a2a80206ee5b4c542c8bfcd44 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+            var marker_036d46de7943edb46db9c4d3cc970f71 = L.marker(
+                [44.15544, -79.87493],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_c247c34ec6f14f0fac5618c832c9e214 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_395e3de8d940714ebdc5c3f422420171 = $(`<div id="html_395e3de8d940714ebdc5c3f422420171" style="width: 100.0%; height: 100.0%;">359.74 km Capacity: c Name : Stevenson Memorial Hospital. ICU: yes. CCU: no. Hours : 0:00/23:59 Phone # :705-435-6281</div>`)[0];
+                popup_c247c34ec6f14f0fac5618c832c9e214.setContent(html_395e3de8d940714ebdc5c3f422420171);
+            
+        
+
+        marker_036d46de7943edb46db9c4d3cc970f71.bindPopup(popup_c247c34ec6f14f0fac5618c832c9e214)
+        ;
+
+        
+    
+    
+            var marker_5c9975d1e7c135a3ee378f329aebeb53 = L.marker(
+                [43.747292, -79.744431],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_4afe9a0e854d035af1bf0ca156b82dad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_969e51fa2361321f522026f1a5659679 = $(`<div id="html_969e51fa2361321f522026f1a5659679" style="width: 100.0%; height: 100.0%;">371.76 km Capacity: b Name : Brampton Civic Hospital. ICU: yes. CCU: yes. Hours : 0:00/23:59 Phone # :905-494-2120</div>`)[0];
+                popup_4afe9a0e854d035af1bf0ca156b82dad.setContent(html_969e51fa2361321f522026f1a5659679);
+            
+        
+
+        marker_5c9975d1e7c135a3ee378f329aebeb53.bindPopup(popup_4afe9a0e854d035af1bf0ca156b82dad)
+        ;
+
+        
+    
+    
+            var marker_d3ed37b2d6e80fd4b60018c0eb4d34a8 = L.marker(
+                [44.4153, -79.6625],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_04563702cc0ed094dd34e890f6cd693e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccb905c3be37bf1bac6aa1a04a61c0c1 = $(`<div id="html_ccb905c3be37bf1bac6aa1a04a61c0c1" style="width: 100.0%; height: 100.0%;">332.92 km Capacity: b Name : Royal Victoria Regional Health Centre. ICU: yes. CCU: yes. Hours : 0:00/23:59 Phone # :705-728-9802</div>`)[0];
+                popup_04563702cc0ed094dd34e890f6cd693e.setContent(html_ccb905c3be37bf1bac6aa1a04a61c0c1);
+            
+        
+
+        marker_d3ed37b2d6e80fd4b60018c0eb4d34a8.bindPopup(popup_04563702cc0ed094dd34e890f6cd693e)
+        ;
+
+        
+    
+    
+            var marker_f3aba4c6b8c772c22ef0915136f98338 = L.marker(
+                [44.10246, -79.12779],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_480d097a0c5b89479fc4da1f3cd626bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c31340864ca826124d8d9da6cddd1f36 = $(`<div id="html_c31340864ca826124d8d9da6cddd1f36" style="width: 100.0%; height: 100.0%;">309.06 km Capacity: c Name : Uxbridge Hospital. ICU: no. CCU: no. Hours : 0:00/23:59 Phone # :905-852-9771</div>`)[0];
+                popup_480d097a0c5b89479fc4da1f3cd626bc.setContent(html_c31340864ca826124d8d9da6cddd1f36);
+            
+        
+
+        marker_f3aba4c6b8c772c22ef0915136f98338.bindPopup(popup_480d097a0c5b89479fc4da1f3cd626bc)
+        ;
+
+        
+    
+    
+            var marker_e8e931fe32daa5109b52b853ff28cc2f = L.marker(
+                [43.557419, -79.703422],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_226b1f88feaadb6f35091e14243b83d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4efdee18de20b7e5a9c80a505910a3ee = $(`<div id="html_4efdee18de20b7e5a9c80a505910a3ee" style="width: 100.0%; height: 100.0%;">380.44 km Capacity: b Name : Credit Valley Hospital. ICU: yes. CCU: yes. Hours : 0:00/23:59 Phone # :905-813-2200</div>`)[0];
+                popup_226b1f88feaadb6f35091e14243b83d2.setContent(html_4efdee18de20b7e5a9c80a505910a3ee);
+            
+        
+
+        marker_e8e931fe32daa5109b52b853ff28cc2f.bindPopup(popup_226b1f88feaadb6f35091e14243b83d2)
+        ;
+
+        
+    
+    
+            var marker_9aa2c3d9bed57001bee105bea7d3eeb8 = L.marker(
+                [43.36669, -79.82233],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_d72b244dc6f8b78245944f0de7e12937 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_810835148fbc6b53b6b5a566abe40f0f = $(`<div id="html_810835148fbc6b53b6b5a566abe40f0f" style="width: 100.0%; height: 100.0%;">400.53 km Capacity: n Name : Burlington Walk-In Clinic. ICU: no. CCU: no. Hours : 6:00/20:00 Phone # :905-681-7755</div>`)[0];
+                popup_d72b244dc6f8b78245944f0de7e12937.setContent(html_810835148fbc6b53b6b5a566abe40f0f);
+            
+        
+
+        marker_9aa2c3d9bed57001bee105bea7d3eeb8.bindPopup(popup_d72b244dc6f8b78245944f0de7e12937)
+        ;
+
+        
+    
+    
+            var marker_9ed8d8b230f6f9403fcb8ea392e5f585 = L.marker(
+                [43.55604, -80.25261],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_28ba6f2c6ca6939f1d6dbab9aebdf9ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c1763365c33e70f9828cc6d91349513 = $(`<div id="html_7c1763365c33e70f9828cc6d91349513" style="width: 100.0%; height: 100.0%;">417.82 km Capacity: b Name : Guelph General Hospital. ICU: yes. CCU: no. Hours : 0:00/23:59 Phone # :519-822-5350</div>`)[0];
+                popup_28ba6f2c6ca6939f1d6dbab9aebdf9ad.setContent(html_7c1763365c33e70f9828cc6d91349513);
+            
+        
+
+        marker_9ed8d8b230f6f9403fcb8ea392e5f585.bindPopup(popup_28ba6f2c6ca6939f1d6dbab9aebdf9ad)
+        ;
+
+        
+    
+    
+            var marker_f98fdd59d0875d0d56fc11a3c0f65d2d = L.marker(
+                [43.55011262, -80.27220107],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_8ef31c7fd420499d9b00867ee730d767 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0876e40461e4db9265aa248831963586 = $(`<div id="html_0876e40461e4db9265aa248831963586" style="width: 100.0%; height: 100.0%;">419.52 km Capacity: b Name : St Joseph's Health Centre. ICU: no. CCU: no. Hours : 9:00/17:00 Phone # :519-824-6000</div>`)[0];
+                popup_8ef31c7fd420499d9b00867ee730d767.setContent(html_0876e40461e4db9265aa248831963586);
+            
+        
+
+        marker_f98fdd59d0875d0d56fc11a3c0f65d2d.bindPopup(popup_8ef31c7fd420499d9b00867ee730d767)
+        ;
+
+        
+    
+    
+            var marker_f5e80cd5b27333199e637a48126f16d6 = L.marker(
+                [42.95846, -80.04432],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_91f66fd65b15a26221de3e001874fbb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2270a75f5d478aab8f7211255b214f7 = $(`<div id="html_a2270a75f5d478aab8f7211255b214f7" style="width: 100.0%; height: 100.0%;">442.66 km Capacity: c Name : West Haldimand General Hospital. ICU: no. CCU: no. Hours : 0:00/23:59 Phone # :905-768-3311</div>`)[0];
+                popup_91f66fd65b15a26221de3e001874fbb7.setContent(html_a2270a75f5d478aab8f7211255b214f7);
+            
+        
+
+        marker_f5e80cd5b27333199e637a48126f16d6.bindPopup(popup_91f66fd65b15a26221de3e001874fbb7)
+        ;
+
+        
+    
+    
+            var marker_59ca0faed072903611e6fab70dbbbeaa = L.marker(
+                [43.261944, -79.854722],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_0b9a02a856b864b615e3e048517423c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ec6e91da354c6ddc68ee2a46bdc89aa = $(`<div id="html_9ec6e91da354c6ddc68ee2a46bdc89aa" style="width: 100.0%; height: 100.0%;">409.6 km Capacity: a Name : Hamilton General Hospital. ICU: yes. CCU: yes. Hours : 0:00/23:59 Phone # :905-521-2100</div>`)[0];
+                popup_0b9a02a856b864b615e3e048517423c7.setContent(html_9ec6e91da354c6ddc68ee2a46bdc89aa);
+            
+        
+
+        marker_59ca0faed072903611e6fab70dbbbeaa.bindPopup(popup_0b9a02a856b864b615e3e048517423c7)
+        ;
+
+        
+    
+    
+            var marker_7f02447f20d1ad721df4287a990b9f4d = L.marker(
+                [43.25936, -79.91742],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_33ce168e175cf21fbb496288b4aad631 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6abc5ac00ece84fb19b8906d300880d = $(`<div id="html_b6abc5ac00ece84fb19b8906d300880d" style="width: 100.0%; height: 100.0%;">413.83 km Capacity: a Name : McMaster Children's Hospital. ICU: yes. CCU: no. Hours : 0:00/23:59 Phone # :905-521-2100</div>`)[0];
+                popup_33ce168e175cf21fbb496288b4aad631.setContent(html_b6abc5ac00ece84fb19b8906d300880d);
+            
+        
+
+        marker_7f02447f20d1ad721df4287a990b9f4d.bindPopup(popup_33ce168e175cf21fbb496288b4aad631)
+        ;
+
+        
+    
+    
+            var marker_c041fb337523bd6638491c9f2cfbfa31 = L.marker(
+                [43.260388, -79.898124],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_a0f6e7125263b4ae147b2d722a29ae6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f761008acb964800084333501290367 = $(`<div id="html_9f761008acb964800084333501290367" style="width: 100.0%; height: 100.0%;">412.51 km Capacity: n Name : West End Clinic. ICU: no. CCU: no. Hours : 12:00/7:00 Phone # :905-521-2100</div>`)[0];
+                popup_a0f6e7125263b4ae147b2d722a29ae6b.setContent(html_9f761008acb964800084333501290367);
+            
+        
+
+        marker_c041fb337523bd6638491c9f2cfbfa31.bindPopup(popup_a0f6e7125263b4ae147b2d722a29ae6b)
+        ;
+
+        
+    
+    
+            var marker_6ea610758451ba5662d961fd67530945 = L.marker(
+                [43.316912, -79.802208],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_a51f88d31d9b3cbd6a97d2ada3bfa802 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_657f131717038e593def471f89c4a432 = $(`<div id="html_657f131717038e593def471f89c4a432" style="width: 100.0%; height: 100.0%;">402.52 km Capacity: b Name : Joseph Brant Hospital. ICU: yes. CCU: no. Hours : 0:00/23:59 Phone # :905-632-3737</div>`)[0];
+                popup_a51f88d31d9b3cbd6a97d2ada3bfa802.setContent(html_657f131717038e593def471f89c4a432);
+            
+        
+
+        marker_6ea610758451ba5662d961fd67530945.bindPopup(popup_a51f88d31d9b3cbd6a97d2ada3bfa802)
+        ;
+
+        
+    
+    
+            var marker_e2aeec4db06b03e21708a0271c74bf44 = L.marker(
+                [43.163142, -79.230931],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_ef504fccbe150c9560011787a2d09ecf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25735c250d8a2958de6090f48426a5cc = $(`<div id="html_25735c250d8a2958de6090f48426a5cc" style="width: 100.0%; height: 100.0%;">377.82 km Capacity: b Name : Niagara Health System-St Catharines. ICU: yes. CCU: yes. Hours : 0:00/23:59 Phone # :905-378-4647</div>`)[0];
+                popup_ef504fccbe150c9560011787a2d09ecf.setContent(html_25735c250d8a2958de6090f48426a5cc);
+            
+        
+
+        marker_e2aeec4db06b03e21708a0271c74bf44.bindPopup(popup_ef504fccbe150c9560011787a2d09ecf)
+        ;
+
+        
+    
+    
+            var marker_c9defbb3ce12426b5c29a189d0e37f7d = L.marker(
+                [43.0125, -81.275],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_6c3868d115c340ce58c158aeea8ca92a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fc700d8cfee15d24c57c5444b3d02fc = $(`<div id="html_9fc700d8cfee15d24c57c5444b3d02fc" style="width: 100.0%; height: 100.0%;">520.21 km Capacity: a Name : London Health Science Centre-Western. ICU: yes. CCU: yes. Hours : 0:00/23:59 Phone # :519-685-8500</div>`)[0];
+                popup_6c3868d115c340ce58c158aeea8ca92a.setContent(html_9fc700d8cfee15d24c57c5444b3d02fc);
+            
+        
+
+        marker_c9defbb3ce12426b5c29a189d0e37f7d.bindPopup(popup_6c3868d115c340ce58c158aeea8ca92a)
+        ;
+
+        
+    
+    
+            var marker_1947d26b05c76e50707b81c07cdef901 = L.marker(
+                [42.9592, -81.2256],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_71f4c3aea920f0033da4a356f19b7a26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc50396e55087e3302b21118837e74ba = $(`<div id="html_bc50396e55087e3302b21118837e74ba" style="width: 100.0%; height: 100.0%;">520.09 km Capacity: a Name : London Health Science Centre-Victoria. ICU: yes. CCU: yes. Hours : 0:00/23:59 Phone # :519-685-8500</div>`)[0];
+                popup_71f4c3aea920f0033da4a356f19b7a26.setContent(html_bc50396e55087e3302b21118837e74ba);
+            
+        
+
+        marker_1947d26b05c76e50707b81c07cdef901.bindPopup(popup_71f4c3aea920f0033da4a356f19b7a26)
+        ;
+
+        
+    
+    
+            var marker_b92d5dd313c8aa27590018d0cfb43e93 = L.marker(
+                [42.976802, -82.390299],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_7163840adcc83b70775fad64ea3aa2a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df2caee5e9313bfe970afbcce1ce5aed = $(`<div id="html_df2caee5e9313bfe970afbcce1ce5aed" style="width: 100.0%; height: 100.0%;">600.24 km Capacity: b Name : Bluewater Health. ICU: yes. CCU: no. Hours : 0:00/23:59 Phone # :519-464-400</div>`)[0];
+                popup_7163840adcc83b70775fad64ea3aa2a5.setContent(html_df2caee5e9313bfe970afbcce1ce5aed);
+            
+        
+
+        marker_b92d5dd313c8aa27590018d0cfb43e93.bindPopup(popup_7163840adcc83b70775fad64ea3aa2a5)
+        ;
+
+        
+    
+    
+            var marker_3b4e57525e9516a02e63c30796106993 = L.marker(
+                [43.437825, -80.503555],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_a63ee85b938b4e25e9c6822a927b8fcb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9aede460819cdaaba3b6d5de1d632b5d = $(`<div id="html_9aede460819cdaaba3b6d5de1d632b5d" style="width: 100.0%; height: 100.0%;">441.99 km Capacity: b Name : St Mary's General Hospital. ICU: no. CCU: yes. Hours : 0:00/23:59 Phone # :519-744-3311</div>`)[0];
+                popup_a63ee85b938b4e25e9c6822a927b8fcb.setContent(html_9aede460819cdaaba3b6d5de1d632b5d);
+            
+        
+
+        marker_3b4e57525e9516a02e63c30796106993.bindPopup(popup_a63ee85b938b4e25e9c6822a927b8fcb)
+        ;
+
+        
+    
+    
+            var marker_06f39ef06f9eb5894084685b10093d11 = L.marker(
+                [43.4564, -80.5122],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_db5b12ea2c974a89fac2d3aa5b7ed000 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea3333bc42cb7d483659d0df14a9fcc0 = $(`<div id="html_ea3333bc42cb7d483659d0df14a9fcc0" style="width: 100.0%; height: 100.0%;">441.51 km Capacity: b Name : Grand River General Hospital. ICU: yes. CCU: no. Hours : 0:00/23:59 Phone # :519-749-4300</div>`)[0];
+                popup_db5b12ea2c974a89fac2d3aa5b7ed000.setContent(html_ea3333bc42cb7d483659d0df14a9fcc0);
+            
+        
+
+        marker_06f39ef06f9eb5894084685b10093d11.bindPopup(popup_db5b12ea2c974a89fac2d3aa5b7ed000)
+        ;
+
+        
+    
+    
+            var marker_91539abdbc08bd1cfd4e3ce1b7b9edd0 = L.marker(
+                [43.539186, -80.278],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_177a162088dac206d02758821911dfb2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b63f9006fcdb1d2a9ebe2b0db49f171 = $(`<div id="html_2b63f9006fcdb1d2a9ebe2b0db49f171" style="width: 100.0%; height: 100.0%;">420.55 km Capacity: n Name : Silvercreek Walk-In Clinic. ICU: no. CCU: no. Hours : 9:00/17:00 Phone # :519-822-9363</div>`)[0];
+                popup_177a162088dac206d02758821911dfb2.setContent(html_2b63f9006fcdb1d2a9ebe2b0db49f171);
+            
+        
+
+        marker_91539abdbc08bd1cfd4e3ce1b7b9edd0.bindPopup(popup_177a162088dac206d02758821911dfb2)
+        ;
+
+        
+    
+    
+            var marker_49a6b71108b2de10488f66c574a6b58d = L.marker(
+                [43.497148, -79.868498],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_420f6497f9afca63d24cf7c17227a6cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_981c2ab205fec805e6574236eda4f788 = $(`<div id="html_981c2ab205fec805e6574236eda4f788" style="width: 100.0%; height: 100.0%;">395.24 km Capacity: b Name : Milton District Hospital. ICU: yes. CCU: yes. Hours : 0:00/23:59 Phone # :905-878-2383</div>`)[0];
+                popup_420f6497f9afca63d24cf7c17227a6cc.setContent(html_981c2ab205fec805e6574236eda4f788);
+            
+        
+
+        marker_49a6b71108b2de10488f66c574a6b58d.bindPopup(popup_420f6497f9afca63d24cf7c17227a6cc)
+        ;
+
+        
+    
+    
+            var marker_d8be11f892ece271858c1f84df3e250a = L.marker(
+                [43.450405, -79.76475],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_5940cd321691cb1481cb5de07ec68335 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c25fc9297a1c6f5db0e0049f5b7839d9 = $(`<div id="html_c25fc9297a1c6f5db0e0049f5b7839d9" style="width: 100.0%; height: 100.0%;">391.31 km Capacity: b Name : Oakville Trafalgar. ICU: yes. CCU: yes. Hours : 0:00/23:59 Phone # :905-845-2571</div>`)[0];
+                popup_5940cd321691cb1481cb5de07ec68335.setContent(html_c25fc9297a1c6f5db0e0049f5b7839d9);
+            
+        
+
+        marker_d8be11f892ece271858c1f84df3e250a.bindPopup(popup_5940cd321691cb1481cb5de07ec68335)
+        ;
+
+        
+    
+    
+            var marker_b068fc99202de868384f95ed2dcf38e8 = L.marker(
+                [43.729387, -79.598171],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_0df5320aec1fcca1bb10737eacbdf3ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69af8db94e01b45b2a4904df7bc1ab08 = $(`<div id="html_69af8db94e01b45b2a4904df7bc1ab08" style="width: 100.0%; height: 100.0%;">362.82 km Capacity: b Name : Etobicoke General Hospital. ICU: yes. CCU: yes. Hours : 0:00/23:59 Phone # :416-747-3400</div>`)[0];
+                popup_0df5320aec1fcca1bb10737eacbdf3ec.setContent(html_69af8db94e01b45b2a4904df7bc1ab08);
+            
+        
+
+        marker_b068fc99202de868384f95ed2dcf38e8.bindPopup(popup_0df5320aec1fcca1bb10737eacbdf3ec)
+        ;
+
+        
+    
+    
+            var marker_fb5bcdc0cb6c645c51427a5128a788f5 = L.marker(
+                [43.657352, -79.38754],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_b098f2e8703651e5d40cf99e30abbe8e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a951ebafb2487b461733f7a152f1ede = $(`<div id="html_2a951ebafb2487b461733f7a152f1ede" style="width: 100.0%; height: 100.0%;">353.15 km Capacity: a Name : The Hospital for Sick Children. ICU: yes. CCU: yes. Hours : 0:00/23:59 Phone # :416-813-1500</div>`)[0];
+                popup_b098f2e8703651e5d40cf99e30abbe8e.setContent(html_2a951ebafb2487b461733f7a152f1ede);
+            
+        
+
+        marker_fb5bcdc0cb6c645c51427a5128a788f5.bindPopup(popup_b098f2e8703651e5d40cf99e30abbe8e)
+        ;
+
+        
+    
+    
+            var marker_3c590c1a8c638a5ada7b7025840a6357 = L.marker(
+                [43.721696, -79.376026],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_a267aef3d82a810171abf7efd2f675c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0efe6942654587e1c19aacf76212b9b = $(`<div id="html_a0efe6942654587e1c19aacf76212b9b" style="width: 100.0%; height: 100.0%;">348.33 km Capacity: a Name : Sunnybrook Health Sciences Centre. ICU: yes. CCU: yes. Hours : 0:00/23:59 Phone # :416-480-6100</div>`)[0];
+                popup_a267aef3d82a810171abf7efd2f675c7.setContent(html_a0efe6942654587e1c19aacf76212b9b);
+            
+        
+
+        marker_3c590c1a8c638a5ada7b7025840a6357.bindPopup(popup_a267aef3d82a810171abf7efd2f675c7)
+        ;
+
+        
+    
+    
+            var marker_8a4c53694f4beca44c0c3bdd6040ad3d = L.marker(
+                [42.307255, -83.030463],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_8b6cd29135590caf5f7ac06e91d16fa5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2596dfd3677220a1d2e9893c2482cd1 = $(`<div id="html_c2596dfd3677220a1d2e9893c2482cd1" style="width: 100.0%; height: 100.0%;">683.62 km Capacity: b Name : Windsor Regional Hospital. ICU: yes. CCU: yes. Hours : 0:00/23:59 Phone # :519-254-5577</div>`)[0];
+                popup_8b6cd29135590caf5f7ac06e91d16fa5.setContent(html_c2596dfd3677220a1d2e9893c2482cd1);
+            
+        
+
+        marker_8a4c53694f4beca44c0c3bdd6040ad3d.bindPopup(popup_8b6cd29135590caf5f7ac06e91d16fa5)
+        ;
+
+        
+    
+    
+            var marker_d7a4a74a12bbf2c988a923747ae3f3cc = L.marker(
+                [43.755833, -79.246944],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_829c426e401f26c46eb927ba3e8eff26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_675b5c17eb27e9a9dea133821095ab0c = $(`<div id="html_675b5c17eb27e9a9dea133821095ab0c" style="width: 100.0%; height: 100.0%;">337.6 km Capacity: b Name : Scarborough General Hospital. ICU: yes. CCU: yes. Hours : 0:00/23:59 Phone # :416-438-2911</div>`)[0];
+                popup_829c426e401f26c46eb927ba3e8eff26.setContent(html_675b5c17eb27e9a9dea133821095ab0c);
+            
+        
+
+        marker_d7a4a74a12bbf2c988a923747ae3f3cc.bindPopup(popup_829c426e401f26c46eb927ba3e8eff26)
+        ;
+
+        
+    
+    
+            var marker_be4631013c6f00a02958036c4d306420 = L.marker(
+                [44.104888, -78.954839],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_63518e40df6bd3ba8115c4cfeb3c5116 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0e05f627989489d6508c05445efcdc3 = $(`<div id="html_d0e05f627989489d6508c05445efcdc3" style="width: 100.0%; height: 100.0%;">296.94 km Capacity: c Name : Lakeridge Health Port Perry. ICU: no. CCU: no. Hours : 0:00/23:59 Phone # :905-985-7321</div>`)[0];
+                popup_63518e40df6bd3ba8115c4cfeb3c5116.setContent(html_d0e05f627989489d6508c05445efcdc3);
+            
+        
+
+        marker_be4631013c6f00a02958036c4d306420.bindPopup(popup_63518e40df6bd3ba8115c4cfeb3c5116)
+        ;
+
+        
+    
+    
+            var marker_64a60cc3349023f5f6b55898be5ee229 = L.marker(
+                [44.163279, -77.364711],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_d3d5a1ebc8b26ddd127ba7fcc12809fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f4c1e3b3be5442b858f5dd5832545f5 = $(`<div id="html_8f4c1e3b3be5442b858f5dd5832545f5" style="width: 100.0%; height: 100.0%;">192.58 km Capacity: b Name : Belleville General Hospital. ICU: yes. CCU: no. Hours : 0:00/23:59 Phone # :613-969-7400</div>`)[0];
+                popup_d3d5a1ebc8b26ddd127ba7fcc12809fa.setContent(html_8f4c1e3b3be5442b858f5dd5832545f5);
+            
+        
+
+        marker_64a60cc3349023f5f6b55898be5ee229.bindPopup(popup_d3d5a1ebc8b26ddd127ba7fcc12809fa)
+        ;
+
+        
+    
+    
+            var marker_d54dc2bdbac2240d63e3dbb02f8d3a4a = L.marker(
+                [44.224283, -76.492881],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_47a4db5449af6e4d09a9206a509214c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd6473d644f78eed141c1470d00cabd9 = $(`<div id="html_fd6473d644f78eed141c1470d00cabd9" style="width: 100.0%; height: 100.0%;">147.35 km Capacity: a Name : Kingston Health Sciences Centre-General. ICU: yes. CCU: yes. Hours : 0:00/23:59 Phone # :613-548-3232</div>`)[0];
+                popup_47a4db5449af6e4d09a9206a509214c4.setContent(html_fd6473d644f78eed141c1470d00cabd9);
+            
+        
+
+        marker_d54dc2bdbac2240d63e3dbb02f8d3a4a.bindPopup(popup_47a4db5449af6e4d09a9206a509214c4)
+        ;
+
+        
+    
+    
+            var marker_b9d40c336d898a43c1a5bf0c8f1ac88a = L.marker(
+                [44.597125, -75.681811],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_b5a6461557c4002943342a353396d574 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3ab4d9ba724b9c5ebe5eda96be3ccad = $(`<div id="html_b3ab4d9ba724b9c5ebe5eda96be3ccad" style="width: 100.0%; height: 100.0%;">91.55 km Capacity: b Name : Brockville General Hospital. ICU: no. CCU: no. Hours : 0:00/23:59 Phone # :613-345-5649</div>`)[0];
+                popup_b5a6461557c4002943342a353396d574.setContent(html_b3ab4d9ba724b9c5ebe5eda96be3ccad);
+            
+        
+
+        marker_b9d40c336d898a43c1a5bf0c8f1ac88a.bindPopup(popup_b5a6461557c4002943342a353396d574)
+        ;
+
+        
+    
+    
+            var marker_883e903ad2f05330a9ffb4cf5c64fde9 = L.marker(
+                [44.591492, -75.700621],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_7f71a0fddd59e520bb2820f265407a60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b5d49585fda275fa01c8dbd1fbeb5d9 = $(`<div id="html_6b5d49585fda275fa01c8dbd1fbeb5d9" style="width: 100.0%; height: 100.0%;">92.17 km Capacity: n Name : Cornerstone Family Medical Center. ICU: no. CCU: no. Hours : 8:30/17:00 Phone # :613-498-0444</div>`)[0];
+                popup_7f71a0fddd59e520bb2820f265407a60.setContent(html_6b5d49585fda275fa01c8dbd1fbeb5d9);
+            
+        
+
+        marker_883e903ad2f05330a9ffb4cf5c64fde9.bindPopup(popup_7f71a0fddd59e520bb2820f265407a60)
+        ;
+
+        
+    
+    
+            var marker_0767225cff754ffe6ac606ce70fd4fbb = L.marker(
+                [45.400767, -75.652152],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_efa03ff805fe7b356c7c992aa0105ea0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3da51df92472cae2c8f5ac66428a0cb3 = $(`<div id="html_3da51df92472cae2c8f5ac66428a0cb3" style="width: 100.0%; height: 100.0%;">3.72 km Capacity: a Name : Children's Hospital of Eastern Ontario. ICU: yes. CCU: yes. Hours : 0:00/23:59 Phone # :613-737-7600</div>`)[0];
+                popup_efa03ff805fe7b356c7c992aa0105ea0.setContent(html_3da51df92472cae2c8f5ac66428a0cb3);
+            
+        
+
+        marker_0767225cff754ffe6ac606ce70fd4fbb.bindPopup(popup_efa03ff805fe7b356c7c992aa0105ea0)
+        ;
+
+        
+    
+    
+            var marker_7f2745e068c7f52221f24a8976562ec1 = L.marker(
+                [45.392674, -75.721418],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_cba735860ae8177859b449ebf1c1097b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3911213e49a0d4433990fb197baa8e5 = $(`<div id="html_f3911213e49a0d4433990fb197baa8e5" style="width: 100.0%; height: 100.0%;">3.98 km Capacity: a Name : The Ottawa Hospital. ICU: yes. CCU: yes. Hours : 0:00/23:59 Phone # :613-798-5555</div>`)[0];
+                popup_cba735860ae8177859b449ebf1c1097b.setContent(html_f3911213e49a0d4433990fb197baa8e5);
+            
+        
+
+        marker_7f2745e068c7f52221f24a8976562ec1.bindPopup(popup_cba735860ae8177859b449ebf1c1097b)
+        ;
+
+        
+    
+    
+            var marker_f874f5eab134d77a9f241d288777c105 = L.marker(
+                [45.828101, -77.097524],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_a095d17a64dc45e4817195e3a45209c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74ba685060e78cb3f69f59712747762a = $(`<div id="html_74ba685060e78cb3f69f59712747762a" style="width: 100.0%; height: 100.0%;">118.72 km Capacity: n Name : Canada House. ICU: no. CCU: no. Hours : 8:00/16:00 Phone # :613-687-1010</div>`)[0];
+                popup_a095d17a64dc45e4817195e3a45209c9.setContent(html_74ba685060e78cb3f69f59712747762a);
+            
+        
+
+        marker_f874f5eab134d77a9f241d288777c105.bindPopup(popup_a095d17a64dc45e4817195e3a45209c9)
+        ;
+
+        
+    
+    
+            var marker_fec875f04bec6015564a44666e2eef10 = L.marker(
+                [48.425014, -89.271273],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_5df5b6cb5b92aad3302d6feee271a0f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e236e989c3c359adbeb6bf076b8f3546 = $(`<div id="html_e236e989c3c359adbeb6bf076b8f3546" style="width: 100.0%; height: 100.0%;">1085.26 km Capacity: a Name : Thunder Bay Regional Health Sciences Centre. ICU: no. CCU: yes. Hours : 0:00/23:59 Phone # :807-684-6000</div>`)[0];
+                popup_5df5b6cb5b92aad3302d6feee271a0f6.setContent(html_e236e989c3c359adbeb6bf076b8f3546);
+            
+        
+
+        marker_fec875f04bec6015564a44666e2eef10.bindPopup(popup_5df5b6cb5b92aad3302d6feee271a0f6)
+        ;
+
+        
+    
+    
+            var marker_4f4d3f5e96ddba1b370e7561d09d6909 = L.marker(
+                [48.425014, -89.271273],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_490cd47691bd34dddf9d0391d2edb680 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bde015084b862547f3a2bcb6ab883372 = $(`<div id="html_bde015084b862547f3a2bcb6ab883372" style="width: 100.0%; height: 100.0%;">1085.26 km Capacity: a Name : Health Sciences North. ICU: yes. CCU: no. Hours : 0:00/23:59 Phone # :705-523-7100</div>`)[0];
+                popup_490cd47691bd34dddf9d0391d2edb680.setContent(html_bde015084b862547f3a2bcb6ab883372);
+            
+        
+
+        marker_4f4d3f5e96ddba1b370e7561d09d6909.bindPopup(popup_490cd47691bd34dddf9d0391d2edb680)
+        ;
+
+        
+    
+    
+            var marker_2a1e3f27fff80a298428c77f35c9a980 = L.marker(
+                [44.501081, -80.204766],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_05a90dc7596db83902419d01953ccf98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae5d10094c8c77ec3ddc50d678b55668 = $(`<div id="html_ae5d10094c8c77ec3ddc50d678b55668" style="width: 100.0%; height: 100.0%;">370.53 km Capacity: n Name : Collingwood After Hours Medical Clinic. ICU: no. CCU: no. Hours : 9:00/21:00 Phone # :705-445-9711</div>`)[0];
+                popup_05a90dc7596db83902419d01953ccf98.setContent(html_ae5d10094c8c77ec3ddc50d678b55668);
+            
+        
+
+        marker_2a1e3f27fff80a298428c77f35c9a980.bindPopup(popup_05a90dc7596db83902419d01953ccf98)
+        ;
+
+        
+    
+    
+            var marker_f5d3715d199520e2cb6796770a9bb849 = L.marker(
+                [43.379819, -80.319675],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_16acbceeae2bde117d994d68b121cd71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36afbc6f7b20b97cabf09eebd6914ed0 = $(`<div id="html_36afbc6f7b20b97cabf09eebd6914ed0" style="width: 100.0%; height: 100.0%;">432.86 km Capacity: c Name : Cambridge Cardiac Care Centre. ICU: no. CCU: yes. Hours : 9:00/17:00 Phone # :519-624-3511</div>`)[0];
+                popup_16acbceeae2bde117d994d68b121cd71.setContent(html_36afbc6f7b20b97cabf09eebd6914ed0);
+            
+        
+
+        marker_f5d3715d199520e2cb6796770a9bb849.bindPopup(popup_16acbceeae2bde117d994d68b121cd71)
+        ;
+
+        
+    
+    
+            var marker_2d9f9aacf26c7ef83d0460b7c011bc87 = L.marker(
+                [43.769334, -79.548617],
+                {}
+            ).addTo(map_3f5f45f458d22b39d24149ce0a83c7a8);
+        
+    
+        var popup_0e50b34afc1df8c2e384198509587212 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8973d39e9e67159bdda11d6ce2be69b3 = $(`<div id="html_8973d39e9e67159bdda11d6ce2be69b3" style="width: 100.0%; height: 100.0%;">357.07 km Capacity: c Name : The Centre for Minor Surgery. ICU: no. CCU: no. Hours : 8:00/16:00 Phone # :416-663-9649</div>`)[0];
+                popup_0e50b34afc1df8c2e384198509587212.setContent(html_8973d39e9e67159bdda11d6ce2be69b3);
+            
+        
+
+        marker_2d9f9aacf26c7ef83d0460b7c011bc87.bindPopup(popup_0e50b34afc1df8c2e384198509587212)
+        ;
+
+        
+    
+</script>
+</html>
